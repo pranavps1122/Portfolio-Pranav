@@ -112,14 +112,12 @@ span{
     margin-top: 1.5rem;
     line-height: 1;
 }
-.home-img{
-    border-radius: 50%;
-}
+
 .home-img img{
     position: relative;
     top: -2rem;
-    width: 369px;
-    height: 389px;
+    width: 350px;
+    height: 350px;
     border-radius: 70%;
     box-shadow: 0 0 28px var(--main-color);
     cursor: pointer;
@@ -443,7 +441,7 @@ span{
 
 }
 .skills-info p{
-    font-size: 1.8rem;
+    
     font-weight: 600;
     max-height: 1000px;
     line-height: 1.7;
@@ -627,6 +625,7 @@ span{
     section{
         padding: 10rem 3% 2rem;
     }
+
 .timeline-items::before{
 
     left:8px;
@@ -648,6 +647,9 @@ span{
     padding-bottom: 7rem;
 
 }
+.skills-info{
+    margin-top: -33px;
+}
 
 .blog .wrapper{
     grid-template-columns: repeat(1,1fr);
@@ -655,12 +657,13 @@ span{
 
 .blog-box img{
     width: 450px;
+    height: 250px;
    
    margin-bottom: 50px;
    margin-top: -72px;
 }
 .blog-item p{
-    font-size: 17px;
+    font-size: 18px;
 
 }
 
@@ -738,4 +741,87 @@ span{
     font-size: 30px;
     padding-bottom: 30px;
 }
-
+home-img{
+    
+    width: px;
+    
+    margin-left: -200px;
+}  
+   
+  
+@media(max-width:500px){
+    #menu-icon{
+       display: block;
+   
+    }
+    .navbar{
+       position: absolute;
+       top: 100%;
+       right: 0;
+       width: 50%;
+       padding: 1rem 3%;
+       background-color: rgba(0, 0, 0, 0.8);
+       backdrop-filter: blur(20px);
+       border-bottom-left-radius: 2rem ;
+       border-left: 2px solid var(--main-color);
+       border-bottom: 2px solid var(--main-color);
+       display: none;
+    }
+    .navbar.active{
+       display: block;
+    }
+    .navbar a{
+       display: block;
+       font-size: 2rem;
+       margin: 3rem 0;
+       color: white;
+   
+    }
+    .home{
+      flex-direction: column-reverse;
+      margin: 5rem 4rem;
+   
+    }
+    .home-content h3{
+       font-size: 2.6rem;
+    }
+    .home-content h1{
+       font-size: 8rem;
+       margin-top: 3rem;
+    }
+    .home-content p{
+       max-width: 600px;
+       margin: 0 auto;
+   
+    }
+    .home-img img{
+       width: 350px;
+    }
+    .skills h2{
+       margin-bottom: 4rem;
+   
+    }
+    .skills-container{
+       grid-template-columns: repeat(1,1fr);
+    }
+   }
+   .About p{
+       font-size: 20px;
+       line-height: 53px;
+       
+   }
+   .About h3{
+       font-size: 30px;
+       padding-bottom: 30px;
+   }
+   home-img{
+       
+       width: px;
+       
+       margin-left: -200px;
+   }    
+   .skills-info p{
+    font-size: 15px;
+   }
+   
+   
