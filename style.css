@@ -446,6 +446,7 @@ span{
     max-height: 1000px;
     line-height: 1.7;
     margin: auto;
+    font-size: 15px;
 
 
 }
@@ -610,7 +611,7 @@ span{
 }
 @media(max-width:1285px){
   html{
-    font-size: 55%;
+    font-size: 65%;
   }  
   .skills-container{
     padding-bottom: 7rem;
@@ -821,7 +822,7 @@ home-img{
        margin-left: -200px;
    }    
    .skills-info p{
-    font-size: 12px;
+    font-size: 14px;
    }
    
    
