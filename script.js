@@ -23,41 +23,43 @@ window.onscroll = () => {
     })
 }
 
+// Form Validation
+
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 
 }
 function validateForm() {
-    // Get form fields
+    
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
     const number = document.getElementById('number').value.trim();
     const subject = document.getElementById('subject').value.trim();
     const message = document.getElementById('msg').value.trim();
 
-    // Regular expression for email validation
+  
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // Validate name
+  
     if (name === '') {
         alert('Please enter your full name.');
         return false;
     }
 
-    // Validate email
+  
     if (!emailPattern.test(email)) {
         alert('Please enter a valid email address (e.g., user@gmail.com).');
         return false;
     }
 
-    // Validate phone number
+ 
     if (number === '' || !/^\d{10}$/.test(number)) {
         alert('Please enter a valid phone number (10 digits).');
         return false;
     }
 
-    // Validate subject
+  
     if (subject === '') {
         alert('Please enter a subject.');
         return false;
